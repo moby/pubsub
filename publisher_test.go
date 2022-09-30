@@ -112,7 +112,7 @@ func TestPubSubRace(t *testing.T) {
 		}
 	})
 	for _, s := range subs {
-		s.Wait()
+		_ = s.Wait()
 	}
 }
 
